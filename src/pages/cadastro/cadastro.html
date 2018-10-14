@@ -1,0 +1,51 @@
+<!--
+  Generated template for the CadastroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cadastre-se</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-label class="padrao">
+            Preencha as informações abaixo
+            <br/>
+            para realizar seu cadastro
+          </ion-label>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label fixed >Nome</ion-label>
+          <ion-input type="text" placeholder="Informe seu Nome" [(ngModel)]="nome"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label fixed >CPF</ion-label>
+          <ion-input type="string" placeholder="Informe seu CPF" [(ngModel)]="cpf"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label fixed >E-mail</ion-label>
+          <ion-input type="text" placeholder="Informe seu E-mail" [(ngModel)]="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label fixed >Senha</ion-label>
+          <ion-input type="password" placeholder="Informe uma Senha" [(ngModel)]="senha"></ion-input>
+        </ion-item>
+
+        <ion-item text-center>
+          <button ion-button class="btnconfirma" (click)="salvarcliente()">Confirmar</button>
+          <button ion-button class="btncancela" (click)="chamarlogin()">Voltar</button>
+        </ion-item>
+    </ion-list>
+</ion-content>

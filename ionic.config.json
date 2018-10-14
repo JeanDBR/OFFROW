@@ -1,0 +1,7 @@
+{
+  "name": "offRow",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
