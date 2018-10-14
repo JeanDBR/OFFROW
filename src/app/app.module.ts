@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { LojasPage } from '../pages/lojas/lojas';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     ListPage,
     LoginPage,
     CadastroPage,
+    LojasPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     HomePage,
     ListPage,
     LoginPage,
-    CadastroPage
+    CadastroPage,
+    LojasPage
   ],
   providers: [
     StatusBar,

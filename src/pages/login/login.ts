@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CadastroPage } from '../cadastro/cadastro';
-import { HomePage } from '../home/home';
+import { LojasPage } from '../lojas/lojas';
 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  email: string = "";
-  senha: string = "";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -18,8 +16,8 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  chamarhome(){
-    this.navCtrl.setRoot(HomePage);
+  chamarlojas(){
+    this.navCtrl.setRoot(LojasPage);
   }
 
   chamarcadastro(){
